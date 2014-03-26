@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script>
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Hospodaření ČSSD'
+            },
+            xAxis: {
+                categories: ['2007', '2008', '2009', '2010', '2011', '2012', '2013']
+            },
+            credits: {
+                enabled: false
+            },
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+            series: [{
+                name: 'Příspěvek ze státního rozpočtu na úhradu volebních nákladů',
+                data: [0, 0, 15843960, 115526700, 0, 0, 101682900]
+            }, {
+                name: 'Příspěvek ze státního rozpočtu na činnost',
+                data: [117250000, 132087500, 175700000, 169075000, 162688750, 161287500, 144826667]
+            }, {
+                name: 'Členské příspěvky',
+                data: [11609036, 17057757, 17785310, 23284107, 19524503, 22279014, 19832590]
+                }, {
+                name: 'Příjmy z pronájmu a prodeje movitého a nemovitého majetku',
+                data: [19119183, 19748460, 20547695, 18751436, 19587171, 21573928, 19875345]
+                }, {
+                name: 'Úroky z vkladů a kurzovní zisky',
+                data: [175280, 98672, 55404, 88878, 35186, 36556, 23433]
+                }, {
+                name: 'Příjmy vznikající z účasti na podnikání jiných právnických osob',
+                data: [0, 0, 0, 0, 0, 0, 0]
+                }, {
+                name: 'Příjmy z pořádání tombol, kulturních, společenských, sportovních, rekreačních, vzdělávacích a politických akcí',
+                data: [405956, 436451, 506427, 581398, 484750, 548399, 294180]
+                }, {
+                name: 'Dary a dědictví',
+                data: [23425987, 38151689, 24560994, 65882977, 36580237, 47636271, 4064641]
+                }, {
+                name: 'Půjčky a úvěry',
+                data: [91500000, 60000000, 270000000, 325000000, 112000000, 255719216, 207905805]
+                }, {
+                name: 'Provozní výdaje',
+                data: [-107534989, -99602708, -162673139, -104768127, -94843701, -100306893, -95073870]
+                }, {
+                name: 'Mzdové výdaje',
+                data: [-67801255, -75567233, -85075709, -84314574, -71538069, -72816464, -72799355]
+                }, {
+                name: 'Výdaje na daně a poplatky',
+                data: [-643997, -362221, -308097, -493417, -335202, -582795, -453001]
+                }, {
+                name: 'Výdaje na volby',
+                data: [-1349950, -97498897, -165170631, -270184573, -1930228, -95711821, -87345138]
+            }]
+        });
+    });
+    
+
+</script>
+
+</body>
+</html>
